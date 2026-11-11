@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b0c" />
+  <title>Happy 4th Monthsary, myloveee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <canvas id="sparkles" aria-hidden="true"></canvas>
+  <div class="grain"></div>
+  <audio id="backgroundMusic" loop preload="none" src="music/Libu-Libong%20Buwan%20(Uuwian)%20-%20Kyle%20Raphael%20(Official%20Music%20Video).mp3"></audio>
+  <div class="music-controls" id="musicControls" hidden>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Play background music" aria-pressed="false">♫ Play music</button>
+    <label class="volume-control" for="musicVolume"><span>Volume</span><input id="musicVolume" type="range" min="0" max="1" step="0.01" value="0.35" aria-label="Music volume" /></label>
+  </div>
+  <span class="visually-hidden" id="musicStatus" aria-live="polite"></span>
+  <main class="site-shell">
+    <section class="page active" id="intro">
+      <div class="eyebrow">A special little surprise</div>
+      <div class="flower-mark">✿</div>
+      <h1 class="hero-title">For my <em>myloveee</em></h1>
+      <p class="subtext">A few little steps before you open something from my heart.</p>
+      <button class="primary-btn" data-go="question">Let's begin <span>↗</span></button>
+      <div class="intro-foot">made with love, just for you <span>♡</span></div>
+    </section>
+
+    <section class="page" id="question">
+      <div class="step">01 <span>—</span> A very important question</div>
+      <div class="mini-heart">♡</div>
+      <h2>Do you love me?</h2>
+      <p class="subtext">Choose carefully, darling. There's only one right answer. :&gt;</p>
+      <div class="choice-row">
+        <button class="primary-btn yes-btn" id="yesBtn">YES, ALWAYS <span>♡</span></button>
+        <button class="no-btn" id="noBtn">No</button>
+      </div>
+      <p class="hint" id="noHint" aria-live="polite">Psst... the “No” button is feeling a little dramatic.</p>
+    </section>
+
+    <section class="page" id="surname">
+      <div class="step">02 <span>—</span> A little future secret</div>
+      <div class="lock-icon">⌑</div>
+      <h2>Future surname code</h2>
+      <p class="subtext">Type the special name to continue.</p>
+      <form id="codeForm" class="code-form">
+        <input id="surnameCode" type="password" placeholder="Enter the surname..." autocomplete="off" aria-label="Surname code" />
+        <button class="primary-btn" type="submit">Unlock <span>↗</span></button>
+      </form>
+      <p class="hint" id="codeHint" aria-live="polite">Hint: it's the surname you already know. ♡</p>
+    </section>
+
+    <section class="page" id="passed">
+      <div class="confetti-symbol">✦</div>
+      <div class="eyebrow">Access granted</div>
+      <h2 class="passed-title">Yeyyy, you passed!</h2>
+      <p class="love-line">iloveyouuu <span>♡</span></p>
+      <div class="letter-preview">
+        <span class="preview-icon">✉</span>
+        <div><strong>A letter for my wifeee</strong><small>Four months of us, and many more to come.</small></div>
+      </div>
+      <button class="primary-btn" data-go="letter">Open letter <span>♡</span></button>
+    </section>
+
+    <section class="page letter-page" id="letter">
+      <div class="date-intro">
+        <div class="date-line"><span>JULY 12, 2026</span><i></i><span>NOVEMBER 12, 2026</span></div>
+        <div class="date-script">four months of us</div>
+        <p class="date-caption">Every little moment brought us here.</p>
+      </div>
+      <article class="letter-card">
+        <div class="letter-top"><span>TO MY DARLING</span><span>✿ 04 / 12 / 26</span></div>
+        <h2 class="letter-heading">Hello, myloveee!</h2>
+        <div class="letter-body">
+          <p>Hello myloveee! Happy 4th monthsary to us mywifeee! 😘😘😘🪻</p>
+          <p>Unang una, gusto ko pong mag thank you sa lahat ng efforts mo, darling. Sobrang naa appreciate ko po lahat ng ginagawa mo for me, even the smallest actions, your updates, and the time you spend with me. I want you to know na hindi ko po tine-take for granted ang lahat ng iyon. Sobrang thankful po ako na ikaw ang kasama ko sa journey na ito darling ko.</p>
+          <p>Darling gusto ko rin pong mag-sorry sa mga pagkakataong sobra tayong nag-aaway. I'm truly sorry for all the times na nasasaktan kita, sa mga pagkakataong ako ang nagiging dahilan ng tampuhan at misunderstandings natin. Sorry po kung may mga times na hindi ko nagagawa nang maayos ang mga bagay². I know na hindi po tayo perfect, pero I promise na patuloy akong matututo, magbabago, at magiging better para sa sarili ko at para rin sa relationship natin.</p>
+          <p>Darling, gusto ko lang din pong sabihin sa'yo na please don't overthink too much, okayyy? I want you to know how much you mean to me. I want to keep choosing you every single day, through our happy moments and even through our difficult days. Hindi man po palaging maayos ang relationship natin pero sana lagi nating piliin na intindihin, pakinggan, at mahalin ang isa't isa. Whatever challenges come our way, I hope we face them together with patience, understanding, and love.</p>
+          <p>Always remember darling na sobrang mahal na mahal po kita, darling kahit malayo ako always remember na may isang taong nag-aalala sa'yo, nagmamahal sa'yo, at laging nagwi-wish na maging okay ka. Kaya please, always take care of yourself myloveee. Huwag mong pabayaan ang sarili mo, kasi mahal na mahal na mahal po kita sobraaa darling ko.</p>
+          <p>Thank you for staying, for loving me, and for making these past four months so special. I know four months may seem short to others, but every moment with you means so much to me. I still have so many memories to make with you, so many stories to share, and so many more monthsaries to celebrate.</p>
+          <p>Happy 4th monthsary again mywifeee<br>I hope we continue growing together, loving each other, and choosing each other every day.</p>
+          <p class="signature">Forever and always iloveyouuu palangga😘😘😘</p>
+        </div>
+        <div class="letter-bottom"><span>WITH ALL MY LOVE</span><span>♡</span></div>
+      </article>
+      <button class="text-btn" id="backToTop">Back to the beginning ↑</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
